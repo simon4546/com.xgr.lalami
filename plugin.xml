@@ -76,7 +76,7 @@
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/FollowListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformGridView.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
-        <source-file src="src/android/libs/*" target-dir="libs" />
+        <!-- <source-file src="src/android/libs/*" target-dir="libs" /> -->
 
 
         <config-file target="AndroidManifest.xml" parent="/*">
