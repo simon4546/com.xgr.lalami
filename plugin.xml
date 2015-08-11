@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+           id="com.xgr.lalami"
+      version="0.2.11">
+
+    <name>lalami</name>
+    <description>Cordova Notification Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,notification</keywords>
+    <!--<asset src="www/Bdlocation.js" target="Bdlocation.js" />
+    <asset src="www/BmobUserService.js" target="BmobUserService.js" />
+    <asset src="www/Message.js" target="Message.js" />
+    <asset src="www/Sharedpreferences.js" target="Sharedpreferences.js" />
+     -->
+    <js-module src="www/Bdlocation.js" name="Bdlocation"></js-module>
+    <js-module src="www/BmobUserService.js" name="BmobUserService">
+    </js-module>
+    <js-module src="www/Message.js" name="Message"></js-module>
+    <js-module src="www/Sharedpreferences.js" name="Sharedpreferences"></js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Message">
+                <param name="android-package" value="com.xgr.lalami.Message"/>
+            </feature>
+            <feature name="Sharedpreferences">
+                <param name="android-package" value="com.xgr.lalami.Sharedpreferences"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Message.java" target-dir="src/com/xgr/lalami" />
+        <source-file src="src/android/close_bk.png" target-dir="res/drawable-hdpi" />
+        <source-file src="src/android/ico_back.png" target-dir="res/drawable-hdpi" />
+        <source-file src="src/android/webview_qq.xml" target-dir="res/layout" />
+
+        <source-file src="src/android/Sharedpreferences.java" target-dir="src/com/xgr/lalami" />
+        <source-file src="src/android/SimonWebViewActivity.java" target-dir="src/com/xgr/lalami" />
+
+        <!--share sdk-->
+        <source-file src="src/android/assets/ShareSDK.xml" target-dir="assets" />
+        <source-file src="src/android/src/com/bbxvip/wxapi/WXEntryActivity.java" target-dir="src/com/bbxvip/wxapi" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/CustomerLogo.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/EditPageFakeActivity.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/FollowerListFakeActivity.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/OnekeyShare.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/OnekeyShareTheme.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/PicViewer.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/PlatformListFakeActivity.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/ReflectableShareContentCustomizeCallback.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/Shake2Share.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/ShareContentCustomizeCallback.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/ShareCore.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/ThemeShareCallback.java" target-dir="src/cn/sharesdk/onekeyshare" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/EditPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/FollowListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformGridView.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
+        <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
+        <source-file src="src/android/libs/*" target-dir="libs" />
+
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+            <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+            <uses-permission android:name="android.permission.GET_TASKS" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+            <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+            <!-- 蓝牙分享所需的权限 -->
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity
+                 android:name="com.mob.tools.MobUIShell"
+                 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                 android:configChanges="keyboardHidden|orientation|screenSize"
+                 android:screenOrientation="portrait"
+                 android:windowSoftInputMode="stateHidden|adjustResize" >
+             <intent-filter>
+             <data android:scheme="tencent100371282" />
+             <action android:name="android.intent.action.VIEW" />
+             <category android:name="android.intent.category.BROWSABLE" />
+             <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+             </activity>
+             <activity
+                 android:name=".wxapi.WXEntryActivity"
+                 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                 android:configChanges="keyboardHidden|orientation|screenSize"
+                 android:exported="true"
+                 android:screenOrientation="portrait" /> 
+            <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+        </config-file>
+        <!--
+        <source-file src="src/android/BaiduLocation.java" target-dir="src/com/spout/phonegap/plugins/baidulocation" />   
+        <source-file src="src/android/locSDK_4.0.jar" target-dir="libs" framework="true"/>      
+        <source-file src="src/android/liblocSDK4.so" target-dir="libs/armeabi" framework="true"/>    -->
+    </platform>
+        <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Message">
+                <param name="ios-package" value="Message"/>
+            </feature>
+            <feature name="Sharedpreferences">
+                <param name="ios-package" value="Sharedpreferences"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Message.h" />
+        <source-file src="src/ios/Message.m" />
+        <header-file src="src/ios/Sharedpreferences.h" />
+        <source-file src="src/ios/Sharedpreferences.m" />
+        <!-- <source-file src="src/ios/SimonWebViewController.m" />
+        <source-file src="src/ios/SimonWebViewController.m" /> -->
+    </platform>
+
+</plugin>
