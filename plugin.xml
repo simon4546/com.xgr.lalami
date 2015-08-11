@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Licensed to the Apache Software Foundation (ASF) under one
-  or more contributor license agreements.  See the NOTICE file
-  distributed with this work for additional information
-  regarding copyright ownership.  The ASF licenses this file
-  to you under the Apache License, Version 2.0 (the
-  "License"); you may not use this file except in compliance
-  with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing,
-  software distributed under the License is distributed on an
-  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  KIND, either express or implied.  See the License for the
-  specific language governing permissions and limitations
-  under the License.
--->
-
-
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     	xmlns:android="http://schemas.android.com/apk/res/android"
            id="com.xgr.lalami"
@@ -34,8 +14,7 @@
     <asset src="www/Sharedpreferences.js" target="Sharedpreferences.js" />
      -->
     <js-module src="www/Bdlocation.js" name="Bdlocation"></js-module>
-    <js-module src="www/BmobUserService.js" name="BmobUserService">
-    </js-module>
+    <js-module src="www/BmobUserService.js" name="BmobUserService"></js-module>
     <js-module src="www/Message.js" name="Message"></js-module>
     <js-module src="www/Sharedpreferences.js" name="Sharedpreferences"></js-module>
     <!-- android -->
@@ -76,7 +55,17 @@
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/FollowListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformGridView.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
         <source-file src="src/android/src/cn/sharesdk/onekeyshare/theme/classic/PlatformListPage.java" target-dir="src/cn/sharesdk/onekeyshare/theme/classic" />
-        <!-- <source-file src="src/android/libs/*" target-dir="libs" /> -->
+        <source-file src="src/android/libs/MobLogCollector.jar" target-dir="libs" />
+        <source-file src="src/android/libs/MobTools.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-Core-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-QQ-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-QZone-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-ShortMessage-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-SinaWeibo-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-Wechat-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-Wechat-Core-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-Wechat-Favorite-2.6.2.jar" target-dir="libs" />
+        <source-file src="src/android/libs/ShareSDK-Wechat-Moments-2.6.2.jar" target-dir="libs" />
 
 
         <config-file target="AndroidManifest.xml" parent="/*">
