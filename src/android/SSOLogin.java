@@ -68,6 +68,7 @@ public class SSOLogin extends CordovaPlugin {
 				coords.put("token", platDB.getToken());
 				coords.put("userIcon", platDB.getUserIcon());
 				String result=coords.toString();
+				Log.d("SSO",  result);
 				callback.success(result);
 			} catch (JSONException e) {
 				callback.success();
