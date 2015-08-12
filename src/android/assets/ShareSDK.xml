@@ -9,7 +9,7 @@
         SortId="1"
         AppKey="1332132978"
         AppSecret="d554f32646ef7dced412ed5e8a8264f2"
-        RedirectUrl="http://m.bbxvip.com"
+        RedirectUrl="http://m.bbxvip.com/api/v1/user/oauth/weibo/token"
         ShareByAppClient="false"
         Enable="true" />
 
@@ -23,10 +23,6 @@
         Enable="true" />
     
     <!-- 
-        Wechat微信和WechatMoments微信朋友圈的appid是一样的；
-    
-                       注意：开发者不能用我们这两个平台的appid,否则分享不了
-    
           微信测试的时候，微信测试需要先签名打包出apk,
         sample测试微信，要先签名打包，keystore在sample项目中，密码123456
         
@@ -41,7 +37,20 @@
         AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
         BypassApproval="false"
         Enable="true" />
-    
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wxd5d1151ffd4b494f"
+        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
+        BypassApproval="false"
+        Enable="true" />
+        
+    <WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wxd5d1151ffd4b494f"
+        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
+        Enable="true" />
    
     
     <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
