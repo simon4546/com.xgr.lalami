@@ -17,6 +17,7 @@
     <js-module src="www/BmobUserService.js" name="BmobUserService"></js-module>
     <js-module src="www/Message.js" name="Message"></js-module>
     <js-module src="www/Sharedpreferences.js" name="Sharedpreferences"></js-module>
+    <js-module src="www/SSOLogin.js" name="SSOLogin"></js-module>
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -25,6 +26,9 @@
             </feature>
             <feature name="Sharedpreferences">
                 <param name="android-package" value="com.xgr.lalami.Sharedpreferences"/>
+            </feature>
+            <feature name="SSOLogin">
+                <param name="android-package" value="com.xgr.lalami.SSOLogin"/>
             </feature>
         </config-file>
 
