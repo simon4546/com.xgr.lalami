@@ -7,10 +7,18 @@
     <SinaWeibo
         Id="1"
         SortId="1"
-        AppKey="1332132978"
-        AppSecret="d554f32646ef7dced412ed5e8a8264f2"
-        RedirectUrl="http://m.bbxvip.com/api/v1/user/oauth/weibo/token"
+        AppKey="670874858"
+        AppSecret="44c1af589361c9fb42c30ae30bbd358a"
+        RedirectUrl="http://m.bbxvip.com"
         ShareByAppClient="false"
+        Enable="true" />
+
+    <TencentWeibo
+        Id="2" 
+        SortId="2"
+        AppKey="801307650"
+        AppSecret="ae36f4ee3946e1cbb98d6965b0b2ff5c"
+        RedirectUri="http://sharesdk.cn"
         Enable="true" />
 
     <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
@@ -23,6 +31,10 @@
         Enable="true" />
     
     <!-- 
+        Wechat微信和WechatMoments微信朋友圈的appid是一样的；
+    
+                       注意：开发者不能用我们这两个平台的appid,否则分享不了
+    
           微信测试的时候，微信测试需要先签名打包出apk,
         sample测试微信，要先签名打包，keystore在sample项目中，密码123456
         
@@ -37,21 +49,21 @@
         AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
         BypassApproval="false"
         Enable="true" />
+    
     <WechatMoments
         Id="5"
         SortId="5"
-        AppId="wxd5d1151ffd4b494f"
-        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
+        AppId="wx4868b35061f87885"
+        AppSecret="64020361b8ec4c99936c0e3999a9f249"
         BypassApproval="false"
         Enable="true" />
         
     <WechatFavorite
         Id="6"
         SortId="6"
-        AppId="wxd5d1151ffd4b494f"
-        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
+        AppId="wx4868b35061f87885"
+        AppSecret="64020361b8ec4c99936c0e3999a9f249"
         Enable="true" />
-   
     
     <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
     <QQ
@@ -63,4 +75,25 @@
         Enable="true" />
     
     
+    <Email
+        Id="12" 
+        SortId="12"
+        Enable="true" />
+    
+    <ShortMessage
+        Id="13" 
+        SortId="13"
+        Enable="true" />
+   
+    
+    <Bluetooth
+        Id="36"
+        SortId="36"
+        Enable="false" />
+
+     <Alipay
+        Id="52"
+        SortId="52"  
+        AppId="2015072400185895"
+        Enable="true"/>
 </DevInfor>
