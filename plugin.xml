@@ -35,7 +35,7 @@
 
         <source-file src="src/android/Sharedpreferences.java" target-dir="src/com/xgr/lalami" />
         <source-file src="src/android/SimonWebViewActivity.java" target-dir="src/com/xgr/lalami" />
-
+        <source-file src="src/android/SSOLogin.java" target-dir="src/com/xgr/lalami" />
         <!--share sdk-->
         <source-file src="src/android/assets/ShareSDK.xml" target-dir="assets" />
         <source-file src="src/android/src/com/bbxvip/wxapi/WXEntryActivity.java" target-dir="src/com/bbxvip/wxapi" />

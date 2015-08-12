@@ -31,10 +31,6 @@ public class SSOLogin extends CordovaPlugin {
 		Platform platform = ShareSDK.getPlatform(this.cordova.getActivity(),
 				SinaWeibo.NAME);
 		;
-		if (paramString.equals("getSinaWeiboInfo")) {
-			platform = ShareSDK
-					.getPlatform(this.cordova.getActivity(), QQ.NAME);
-		}
 		if (paramString.equals("loginQQInfo")) {
 			platform = ShareSDK
 					.getPlatform(this.cordova.getActivity(), QQ.NAME);
