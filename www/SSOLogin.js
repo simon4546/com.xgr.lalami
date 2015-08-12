@@ -1,13 +1,13 @@
  var exec = require('cordova/exec');
-    var platform = require('cordova/platform');
-    module.exports = {
-        loginQQInfo: function (url,ordid,ordfee,dealtitle,success,fail) {
-            exec(success, fail, "SSOLogin", "loginQQInfo", [url,ordid,ordfee,dealtitle]);
-        },
-        loginWeiXinInfo: function (message,duration,position) {
-            exec(null, null, "SSOLogin", "loginWeiXinInfo", [message,duration||'short',position||'bottom']);
-        },
-        getSinaWeiboInfo: function (username,objectId) {
-            exec(null, null, "SSOLogin", "getSinaWeiboInfo", [username,objectId]);
-        }
-    };
+ var platform = require('cordova/platform');
+ module.exports = {
+     loginQQInfo: function(success, fail) {
+         exec(success, fail, "SSOLogin", "loginQQInfo", []);
+     },
+     loginWeiXinInfo: function(success, fail) {
+         exec(success, fail, "SSOLogin", "loginWeiXinInfo", []);
+     },
+     getSinaWeiboInfo: function(success, fail) {
+         exec(success, fail, "SSOLogin", "getSinaWeiboInfo", []);
+     }
+ };

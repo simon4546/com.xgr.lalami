@@ -8,11 +8,7 @@
     <description>Cordova Notification Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,notification</keywords>
-    <!--<asset src="www/Bdlocation.js" target="Bdlocation.js" />
-    <asset src="www/BmobUserService.js" target="BmobUserService.js" />
-    <asset src="www/Message.js" target="Message.js" />
-    <asset src="www/Sharedpreferences.js" target="Sharedpreferences.js" />
-     -->
+
     <js-module src="www/Bdlocation.js" name="Bdlocation"></js-module>
     <js-module src="www/BmobUserService.js" name="BmobUserService"></js-module>
     <js-module src="www/Message.js" name="Message"></js-module>
