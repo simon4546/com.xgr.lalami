@@ -7,9 +7,9 @@
     <SinaWeibo
         Id="1"
         SortId="1"
-        AppKey="670874858"
-        AppSecret="44c1af589361c9fb42c30ae30bbd358a"
-        RedirectUrl="http://m.bbxvip.com"
+        AppKey="1332132978"
+        AppSecret="d554f32646ef7dced412ed5e8a8264f2"
+        RedirectUrl="http://m.bbxvip.com/api/v1/user/oauth/weibo/token"
         ShareByAppClient="false"
         Enable="true" />
 
@@ -53,16 +53,16 @@
     <WechatMoments
         Id="5"
         SortId="5"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
+        AppId="wxd5d1151ffd4b494f"
+        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
         BypassApproval="false"
         Enable="true" />
         
     <WechatFavorite
         Id="6"
         SortId="6"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
+        AppId="wxd5d1151ffd4b494f"
+        AppSecret="90a2b46ef05d0b633fcd9b9f46493506"
         Enable="true" />
     
     <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
